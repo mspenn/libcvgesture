@@ -1,5 +1,5 @@
 # libcvgesture
-camera gesture recognition based on opencv
+camera gesture recognition based on opencv.
 download [libcvgesture](https://github.com/mspenn/libcvgesture/blob/master/libcvgesture.zip "Download Link").
 
 ## General Idea
@@ -12,3 +12,9 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/blob/master/libcv
 ### Using simple motion detection
 + Split foreground and background
 + Mask image extract skin color with foreground threshold
+
+## Screenshots
++ Let's start!
+![screenshot-1](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-1.png)
++ Detecting..
+![screenshot-2](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-2.png)

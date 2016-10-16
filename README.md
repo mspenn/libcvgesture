@@ -36,10 +36,8 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 ### Setup OpenCV
 
 + Link modules
-
-link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
-
-minimal modules(\* stands for Debug/Release version):
+  link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
+  minimal modules(\* stands for Debug/Release version):
 <pre><code>
 opencv_core2413*.lib
 opencv_highgui2413*.lib
@@ -55,7 +53,7 @@ opencv_highgui2413*.dll
 opencv_imgproc2413*.dll
 opencv_gpu2413*.dll
 opencv_video2413*.dll
-<em>opencv_ffmpeg2413.dll</em>
+<strong>opencv_ffmpeg2413.dll</strong>
 </code></pre>
 
 Just remember to copy *opencv_ffmpeg2413.dll*
@@ -69,11 +67,7 @@ cvgesture.h
 
 Configure in VS IDE:
 
-> Project Properties > VC++ Directories > Include Directories 
-
-or 
-
-> Project Properties > C/C++ > General > Additional Include Directories 
+`Project Properties > VC++ Directories > Include Directories` or `Project Properties > C/C++ > General > Additional Include Directories`
 
 + Setup libraies
 `
@@ -82,9 +76,9 @@ cvgesture*.lib
 
 Configure in VS IDE:
 
-> Project Properties > VC++ Directories > Library Directories
+`Project Properties > VC++ Directories > Library Directories`
 
-and copy *cvgesture\*.dll* to execution root
+And copy *cvgesture\*.dll* to execution root
 
 ### Demos
 use C-Style functions, just like [Test.cpp](https://github.com/mspenn/libcvgesture/blob/master/test/Test.cpp)

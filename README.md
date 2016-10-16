@@ -39,26 +39,20 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 
 link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
 
-minimal moudules(\* stands for Debug/Release version):
-
-<pre><code>
-opencv_core2413\*.lib
-opencv_highgui2413\*.lib
-opencv_imgproc2413\*.lib
-opencv_gpu2413\*.lib
-opencv_video2413\*.lib
-</code></pre>
+minimal modules(\* stands for Debug/Release version):
+`opencv_core2413*.lib
+opencv_highgui2413*.lib
+opencv_imgproc2413*.lib
+opencv_gpu2413*.lib
+opencv_video2413*.lib`
 
 + Copy shared library to exectution root.
-
-<pre><code>
-opencv_core2413\*.dll
-opencv_highgui2413\*.dll
-opencv_imgproc2413\*.dll
-opencv_gpu2413\*.dll
-opencv_video2413\*.dll
-*opencv_ffmpeg2413.dll*
-</code></pre>
+`opencv_core2413*.dll
+opencv_highgui2413*.dll
+opencv_imgproc2413*.dll
+opencv_gpu2413*.dll
+opencv_video2413*.dll`
+*`opencv_ffmpeg2413.dll`*
 
 Just remember to copy *opencv_ffmpeg2413.dll*
 
@@ -72,12 +66,15 @@ cvgesture.h
 Configure in VS IDE:
 
 > Project Properties > VC++ Directories > Include Directories 
-> or Project Properties > C/C++ > General > Additional Include Directories 
+
+or 
+
+> Project Properties > C/C++ > General > Additional Include Directories 
 
 + Setup libraies
 
 <pre><code>
-cvgesture\*.lib
+cvgesture*.lib
 </code></pre>
 
 Configure in VS IDE:

@@ -1,6 +1,12 @@
 # libcvgesture
 camera gesture recognition based on opencv.
-download [libcvgesture](https://github.com/mspenn/libcvgesture/blob/master/libcvgesture.zip "Download Link").
+download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvgesture.zip "Download Link").
+
+## Development Env
++ Windows 7
++ Visual Studio 2013
++ [OpenCV 2.4.13](http://downloads.sourceforge.net/project/opencvlibrary/opencv-win/2.4.13/opencv-2.4.13.exe?r=http%3A%2F%2Fopencv.org%2F&ts=1476585624&use_mirror=nchc "OpenCV2413")
+
 
 ## General Idea
 
@@ -14,8 +20,32 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/blob/master/libcv
 + Mask image extract skin color with foreground threshold
 
 ## Screenshots
+
 + Let's start! Ooops, it looks like the Frostbite logo, aha!!
 ![screenshot-1](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-1.png)
 
 + Moving my hand and detecting, and it output the gesture info in the console window.
 ![screenshot-2](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-2.png)
+
+## How to use it?
++ Setup OpenCV
+++ Link modules
+link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
+minimal moudules([^*] stands for Debug/Release version):
+----
+opencv_core2413*.lib
+opencv_highgui2413*.lib
+opencv_imgproc2413*.lib
+opencv_gpu2413*.lib
+opencv_video2413*.lib
+
+++ Copy shared libray to exectution root.
+----
+opencv_core2413*.dll
+opencv_highgui2413*.dll
+opencv_imgproc2413*.dll
+opencv_gpu2413*.dll
+opencv_video2413*.dll
+
++ Use libcvgesture
+

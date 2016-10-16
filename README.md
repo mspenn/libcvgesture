@@ -36,7 +36,7 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 ### Setup OpenCV
 
 + Link modules  
-  link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
+  link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.  
   minimal modules(\* stands for Debug/Release version):
 <pre><code>
 opencv_core2413*.lib

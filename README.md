@@ -33,11 +33,11 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
 minimal moudules([^*] stands for Debug/Release version):
 
-> opencv_core2413*.lib
-> opencv_highgui2413*.lib
-> opencv_imgproc2413*.lib
-> opencv_gpu2413*.lib
-> opencv_video2413*.lib
+  opencv_core2413*.lib
+  opencv_highgui2413*.lib
+  opencv_imgproc2413*.lib
+  opencv_gpu2413*.lib
+  opencv_video2413*.lib
 
 
 * Copy shared libray to exectution root.

@@ -32,9 +32,12 @@ int main()
 #else
 	bind_handler_default();
 #endif
-	// start up system, press 'q' to quit
-	startup_with_file("test.avi", true);
-	
+	// start up from a video file, press 'q' to quit
+	//startup_with_file("test.avi", true);
+
+	// start up from web camera, 0 by default, press 'q' to quit
+	startup_with_camera(0, true);
+
 	// record video if you want, press 'q' to quit
 	//record_video("cvg-001.avi");
 	return 0;

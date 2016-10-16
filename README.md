@@ -1,7 +1,7 @@
 # libcvgesture
 
-camera gesture recognition based on opencv.
-download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvgesture.zip "Download Link").
+Camera gesture recognition based on opencv.
+Download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvgesture.zip "Download libcvgesture.zip").
 
 ## Development Env
 + Windows 7
@@ -21,7 +21,7 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 + Mask image extracted by skin color with foreground threshold
 
 ### Simple Gesture Recognition
-+ recognize gesture by [$1 algorithm](http://depts.washington.edu/aimgroup/proj/dollar/index.html "DollarOne Algorithm")
++ Recognize gesture by [$1 algorithm](http://depts.washington.edu/aimgroup/proj/dollar/index.html "DollarOne Algorithm")
 
 ## Screenshots
 
@@ -36,7 +36,7 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 ### Setup OpenCV
 
 + Link modules  
-  link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.  
+  choose opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need. And setup opencv headers and libs. If you don't want to extend any functions, just skip this step.  
   minimal modules(\* stands for Debug/Release version):
 <pre><code>
 opencv_core2413*.lib
@@ -81,4 +81,4 @@ cvgesture*.lib
   And copy _cvgesture\*.dll_ to execution root
 
 ### Demos
-use C-Style functions, just like [Test.cpp](https://github.com/mspenn/libcvgesture/blob/master/test/Test.cpp)
+Use C-Style functions, just like [Test.cpp](https://github.com/mspenn/libcvgesture/blob/master/test/Test.cpp)

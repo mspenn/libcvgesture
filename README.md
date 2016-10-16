@@ -64,6 +64,7 @@ Just remember to copy _opencv_ffmpeg2413.dll_
 `
 cvgesture.h
 `
+
 > Configure in VS IDE:
 
 `Project Properties > VC++ Directories > Include Directories` or `Project Properties > C/C++ > General > Additional Include Directories`

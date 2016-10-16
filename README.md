@@ -40,28 +40,32 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
 
 minimal modules(\* stands for Debug/Release version):
-`opencv_core2413*.lib
+<pre><code>
+opencv_core2413*.lib
 opencv_highgui2413*.lib
 opencv_imgproc2413*.lib
 opencv_gpu2413*.lib
-opencv_video2413*.lib`
+opencv_video2413*.lib
+</code></pre>
 
 + Copy shared library to exectution root.
-`opencv_core2413*.dll
+<pre><code>
+opencv_core2413*.dll
 opencv_highgui2413*.dll
 opencv_imgproc2413*.dll
 opencv_gpu2413*.dll
-opencv_video2413*.dll`
-*`opencv_ffmpeg2413.dll`*
+opencv_video2413*.dll
+<em>opencv_ffmpeg2413.dll</em>
+</code></pre>
 
 Just remember to copy *opencv_ffmpeg2413.dll*
 
 ### Use libcvgesture
 
 + Setup includes
-<pre><code>
+`
 cvgesture.h
-</code></pre>
+`
 
 Configure in VS IDE:
 
@@ -72,10 +76,9 @@ or
 > Project Properties > C/C++ > General > Additional Include Directories 
 
 + Setup libraies
-
-<pre><code>
+`
 cvgesture*.lib
-</code></pre>
+`
 
 Configure in VS IDE:
 

@@ -1,4 +1,5 @@
 # libcvgesture
+
 camera gesture recognition based on opencv.
 download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvgesture.zip "Download Link").
 
@@ -10,14 +11,17 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 
 ## General Idea
 
-### Using sking color model
+### Sking Color Model
 + Convert RGB color to HSV
 + Sample color from HSV color space
 + Extract color using HSV color space
 
-### Using simple motion detection
+### Average Motion Detection
 + Split foreground and background
-+ Mask image extract skin color with foreground threshold
++ Mask image extracted by skin color with foreground threshold
+
+### Simple Gesture Recognition
++ recognize gesture by [$1 algorithm](http://depts.washington.edu/aimgroup/proj/dollar/index.html "DollarOne Algorithm")
 
 ## Screenshots
 
@@ -28,25 +32,59 @@ download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 ![screenshot-2](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-2.png)
 
 ## How to use it?
-+ Setup OpenCV
-* Link modules
+
+### Setup OpenCV
+
++ Link modules
+
 link opencv modules([view introductions](http://docs.opencv.org/2.4/modules/refman.html "OpenCV Modules")) you need.
-minimal moudules([^*] stands for Debug/Release version):
 
-  opencv_core2413*.lib
-  opencv_highgui2413*.lib
-  opencv_imgproc2413*.lib
-  opencv_gpu2413*.lib
-  opencv_video2413*.lib
+minimal moudules(\* stands for Debug/Release version):
 
+<pre><code>
+opencv_core2413\*.lib
+opencv_highgui2413\*.lib
+opencv_imgproc2413\*.lib
+opencv_gpu2413\*.lib
+opencv_video2413\*.lib
+</code></pre>
 
-* Copy shared libray to exectution root.
-----
-opencv_core2413*.dll
-opencv_highgui2413*.dll
-opencv_imgproc2413*.dll
-opencv_gpu2413*.dll
-opencv_video2413*.dll
++ Copy shared library to exectution root.
 
-+ Use libcvgesture
+<pre><code>
+opencv_core2413\*.dll
+opencv_highgui2413\*.dll
+opencv_imgproc2413\*.dll
+opencv_gpu2413\*.dll
+opencv_video2413\*.dll
+*opencv_ffmpeg2413.dll*
+</code></pre>
 
+Just remember to copy *opencv_ffmpeg2413.dll*
+
+### Use libcvgesture
+
++ Setup includes
+<pre><code>
+cvgesture.h
+</code></pre>
+
+Configure in VS IDE:
+
+> Project Properties > VC++ Directories > Include Directories 
+> or Project Properties > C/C++ > General > Additional Include Directories 
+
++ Setup libraies
+
+<pre><code>
+cvgesture\*.lib
+</code></pre>
+
+Configure in VS IDE:
+
+> Project Properties > VC++ Directories > Library Directories
+
+and copy *cvgesture\*.dll* to execution root
+
+### Demos
+use C-Style functions, just like [Test.cpp](https://github.com/mspenn/libcvgesture/blob/master/test/Test.cpp)

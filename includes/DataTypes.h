@@ -1,7 +1,9 @@
 #ifndef __DATA_TYPES_H__
 #define __DATA_TYPES_H__
 
+#ifndef __cplusplus_normal__
 #include <functional>
+#endif
 #include <vector>
 #include "Common.h"
 
@@ -38,8 +40,12 @@ namespace cvg
 		HandType _handType;
 		HandData() :_fingerNum(-1){}
 	};
-
+	
+#ifndef __cplusplus_normal__
 	typedef std::function<void(HandData)> ActionHandler;
+#else
+	typedef void(*ActionHandler)(HandData);
+#endif
 }
 
 #endif

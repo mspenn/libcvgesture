@@ -20,16 +20,16 @@ Download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 + Split foreground and background
 + Mask image extracted by skin color with foreground threshold
 
-### Simple Gesture Recognition
-+ Recognize gesture by [$1 algorithm](http://depts.washington.edu/aimgroup/proj/dollar/index.html "DollarOne Algorithm")
+### Development Guide
+[libcvgesture Dev Guide](docs/libcvgesture Brief Documention.md)
 
 ## Screenshots
 
 + Let's start! Ooops, it looks like the Frostbite logo, aha!!
-![screenshot-1](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-1.png)
+![screenshot-1](screenshots/screenshot-1.png)
 
 + Moving my hand and detecting, and it output the gesture info in the console window.
-![screenshot-2](https://github.com/mspenn/libcvgesture/blob/master/screenshots/screenshot-2.png)
+![screenshot-2](screenshots/screenshot-2.png)
 
 ## How to use it?
 
@@ -81,4 +81,4 @@ cvgesture*.lib
   And copy _cvgesture\*.dll_ to execution root
 
 ### Demos
-Use C-Style functions, just like [Test.cpp](https://github.com/mspenn/libcvgesture/blob/master/test/Test.cpp)
+Use C-Style functions, just like [Test.cpp](test/Test.cpp)

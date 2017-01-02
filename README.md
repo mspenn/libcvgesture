@@ -20,7 +20,7 @@ Download [libcvgesture](https://github.com/mspenn/libcvgesture/raw/master/libcvg
 + Split foreground and background
 + Mask image extracted by skin color with foreground threshold
 
-### Development Guide
+## Development Guide
 [libcvgesture Dev Guide](docs/libcvgesture Brief Documention.md)
 
 ## Screenshots

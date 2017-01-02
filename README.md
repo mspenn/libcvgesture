@@ -81,4 +81,4 @@ cvgesture*.lib
   And copy _cvgesture\*.dll_ to execution root
 
 ### Demos
-Use C-Style functions, just like [Test.cpp](test/Test.cpp)
+Use C-Style functions, just like [Test.cpp](cvg_test/Test.cpp)
